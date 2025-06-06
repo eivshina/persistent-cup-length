@@ -57,16 +57,48 @@ from dreimac_combinatorial import *
 ### 3. Example: Computing cup length on a torus
 
 ```python
-import numpy as np
-
-np.random.seed(42)  # Ensure reproducibility
-
-# Parameters for point cloud
+np.random.seed(42)
+# Parameters
 n_points = 2000  # Number of points to sample
-R = 5            # Major radius of the torus
-r = 2            # Minor radius of the torus
+R = 5  # Major radius of the torus
+r = 2  # Minor radius of the torus
+ 
 
-# The tutorial notebook walks through the full example
+# Sample points from a torus
+torus_points = sample_torus(n_points, R, r)
+
+# Create a distance matrix from the point cloud
+d = pairwise_distances(torus_points, metric='euclidean')
+threshold = np.max(d[~np.isinf(d)])
+
+
+# Compute persistent homology on a subsampled point cloud.
+ripser_result = rips_filtration_diagram(data = d, distance_matrix = True, n_landmarks = 150, thresh = threshold)
+dgms = ripser_result['dgms']
+plot_diagrams(dgms, show=True)
+
+
+# Compute the threshold persistence  
+min_persistence = compute_threshold_persistence(dgms[1])
+
+
+t0 = time.time()
+# Compute persistent cup length
+(persistent_cup_length_matrix, b_times, d_times, cup_length_2) = compute_persistent_cup_length_ripser(2, \
+                                                    ripser_result, \
+                                                    d, \
+                                                    min_persistence, \
+                                                    threshold)
+
+t1 = time.time()
+elapsed_time = (t1 - t0) / 60  
+
+print(f"Function took {elapsed_time:.2f} minutes to run.")
+
+nonzero_elements = persistent_cup_length_matrix[persistent_cup_length_matrix != 0]
+unique_vals, counts = np.unique(nonzero_elements, return_counts=True)
+for value, count in zip(unique_vals, counts):
+    print(f"Cup length {value} appears {count} times")
 ```
 
 ---
