@@ -16,9 +16,9 @@ This code is built for use with **Ripser** and works with both full and landmark
 ## 📁 Repository Contents
 
 - `cup_length_utils.py` – Core implementation of the persistent cup-length algorithm.
-- `dreimac_utils.py` – Utility functions for working with point clouds, filtrations, and cocycles.
-- `dreimac_combinatorial.py` – Combinatorial number system utilities for indexing simplices.
-- `tutorial_on_persistent_cup_length.ipynb` – An interactive **Colab notebook** tutorial for running the cup-length algorithm on a torus.
+- `dreimac_utils.py` – Utility functions; most are from [Dreimac library](https://dreimac.scikit-tda.org/en/latest/)
+- `dreimac_combinatorial.py` – Utility functions for combinatorial number system
+- `tutorial_on_persistent_cup_length.ipynb` – A **Colab notebook** tutorial for running the persistent cup-length algorithm on a torus.
  
 
 ---
