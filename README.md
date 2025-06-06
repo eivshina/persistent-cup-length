@@ -140,3 +140,5 @@ If you use this code in your research, please cite the associated paper:
 ## 📬 Questions?
 
 Feel free to open an issue or contact ekaterina.s.ivshina@gmail.com for questions or suggestions.
+
+## TODO: add zenodo doi citation for repo
