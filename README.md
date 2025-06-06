@@ -23,7 +23,7 @@ This code is built for use with **Ripser** and works with both full and landmark
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started in Google Colab
 
 ### 1. Install dependencies
 
