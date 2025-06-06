@@ -124,7 +124,7 @@ See docstring inside `cup_length_utils.py` for full documentation.
 
 If you use this code in your research, please cite the associated paper:
 
-> _Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length_, Ivshina et al., 2025.
+> _Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length_, E Ivshina, G Anikeeva, L Zhou, 2025.
 
 ---
 
@@ -139,4 +139,4 @@ If you use this code in your research, please cite the associated paper:
 
 ## 📬 Questions?
 
-Feel free to open an issue or contact [@eivshina](https://github.com/eivshina) for questions or suggestions.
+Feel free to open an issue or contact ekaterina.s.ivshina@gmail.com for questions or suggestions.
