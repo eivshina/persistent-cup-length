@@ -1,6 +1,7 @@
 # 🌀 persistent-cup-length
 
 Code accompanying the paper **"Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length"**.  
+
 This repository provides an implementation and tutorial for computing the **persistent cup-length**, an algebraic-topological invariant, compatible with persistent cohomology computed using [Ripser](https://github.com/scikit-tda/ripser).
 
 ---
@@ -9,7 +10,7 @@ This repository provides an implementation and tutorial for computing the **pers
 
 The **persistent cup-length** algorithm, introduced by [Contessoto et al. (2022)](https://doi.org/10.4230/lipics.socg.2022.31), identifies higher-order topological interactions in data using persistent cohomology and the cup product operation over Z mod 2. This helps detect nontrivial toroidal structures, going beyond standard barcode analysis.
 
-This code is built for use with **Ripser** and works with both full and landmark-subsampled Vietoris–Rips filtrations.
+This code is built for use with **Ripser** and works with both full and landmark-subsampled Vietoris–Rips filtrations. A version of the algorithm designed to work with simplexwise filtration in [Dionysus](https://www.mrzv.org/software/dionysus/) will be released soon.
 
 ---
 
