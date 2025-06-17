@@ -539,7 +539,7 @@ def to_hashable(barcode):
 
 
 # CUP LENGTH ALGORITHM COMPTABILE WITH RIPSER
-def compute_persistent_cup_length_ripser(k: int, \
+def compute_persistent_cup_length(k: int, \
                                         ripser_result: Dict, \
                                         distance_matrix_full: np.array, \
                                         min_persistence: float, \
