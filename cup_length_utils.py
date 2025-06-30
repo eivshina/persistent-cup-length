@@ -792,8 +792,7 @@ def plot_persistent_homology_barcodes(ph_data, cup_interval=None, y_offset=2, ba
 
  
 
-
-def plot_and_extract_staircase_polygons(matrix, births, deaths,
+def plot_and_extract_staircase_polygons(matrix, h1_dgms, births, deaths,
                                         diagonal_range=None,
                                         death_max=None,
                                         facecolors=None,
@@ -829,6 +828,11 @@ def plot_and_extract_staircase_polygons(matrix, births, deaths,
                 continue
             output.setdefault(val, {'diagram_points': []})
             output[val]['diagram_points'].append((b, d))
+
+
+    for bar in h1_dgms:
+        output.setdefault(1, {'diagram_points': []})
+        output[1]['diagram_points'].append(tuple(bar))
 
     # Step 2: Compute staircase critical points and polygons
     for val, data in output.items():
@@ -883,6 +887,10 @@ def plot_and_extract_staircase_polygons(matrix, births, deaths,
         if not data['diagram_points']:
             continue
         births_, deaths_ = zip(*data['diagram_points'])
+        print('births_', births_)
+
+        print('deaths_', deaths_)
+
         if show_cup_length_diagram:
             point_color = pointcolors.get(val, 'lightpink') if pointcolors else 'lightpink'
             label_pts = f'cup-length {int(val)} pts' if val not in label_added else None
@@ -905,14 +913,18 @@ def plot_and_extract_staircase_polygons(matrix, births, deaths,
     ax.set_xlim(*diagonal_range)
     ax.set_ylim(0, death_max)
     ax.set_aspect('equal')
-    ax.set_xlabel('Birth')
-    ax.set_ylabel('Death')
-    ax.set_title(title)
+    # Set font sizes for labels and title
+    ax.set_xlabel('Birth', fontsize=14)
+    ax.set_ylabel('Death', fontsize=14)
+    ax.set_title(title, fontsize=14)
 
+    # Adjust tick label fonts
+    ax.tick_params(axis='both', which='major', labelsize=14)
+
+    # Adjust legend font size
     handles, labels = ax.get_legend_handles_labels()
     if handles:
-        ax.legend()
-    plt.tight_layout()
-    plt.show()
+        ax.legend(fontsize=12)
+
 
     return output
