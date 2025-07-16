@@ -30,10 +30,11 @@ This code is built for use with **Ripser** and works with both full and landmark
 
 ## 📁 Repository Contents
 
-- `cup_length_utils.py` – Core implementation of the persistent cup-length algorithm.
+- `cup_length_utils.py` – Core implementation of the persistent cup-length algorithm for Vieotoris-Rips filtrations.
 - `dreimac_utils.py` – Utility functions; most are from [Dreimac library](https://dreimac.scikit-tda.org/en/latest/)
 - `dreimac_combinatorial.py` – Utility functions for combinatorial number system
 - `tutorial_on_persistent_cup_length.ipynb` – A **Colab notebook** tutorial for running the persistent cup-length algorithm on a torus.
+- `simplexwise_persistent_cup_length.ipynb` -  A **Colab notebook** containing our implementation of the persistent cup-length algorithm for simplexwise filtrations computed with [Dionysus](https://www.mrzv.org/software/dionysus/).
  
 
 ---
