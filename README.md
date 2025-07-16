@@ -125,7 +125,7 @@ See docstring inside `cup_length_utils.py` for full documentation.
 
 If you use this code in your research, please cite the associated paper:
 
-> @misc{ivshina2025doughnutmickeymousedetecting,
+``` @misc{ivshina2025doughnutmickeymousedetecting,
       title={Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length}, 
       author={Ekaterina S. Ivshina and Galit Anikeeva and Ling Zhou},
       year={2025},
@@ -134,7 +134,7 @@ If you use this code in your research, please cite the associated paper:
       primaryClass={math.AT},
       url={https://arxiv.org/abs/2507.11151}, 
 }
-
+```
 ---
 
 ## 🛠️ Requirements
