@@ -35,6 +35,9 @@ This code is built for use with **Ripser** and works with both full and landmark
 - `dreimac_combinatorial.py` – Utility functions for combinatorial number system
 - `tutorial_on_persistent_cup_length.ipynb` – A **Colab notebook** tutorial for running the persistent cup-length algorithm on a torus.
 - `simplexwise_persistent_cup_length.ipynb` -  A **Colab notebook** containing our implementation of the persistent cup-length algorithm for simplexwise filtrations computed with [Dionysus](https://www.mrzv.org/software/dionysus/).
+- `fig1_dataset` folder contains the torus distance matrix as well as the point cloud used to create the top panel (torus) of Figure 1 in our paper.
+
+The distance matrix used to create the bottom panel (wedge sum) in Figure 1 of the paper is available [here](https://drive.google.com/drive/folders/1Gj4urjBrd7jWnAEoz1Hp7-ED4OdexG_l?usp=sharing).
  
 
 ---
