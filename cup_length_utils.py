@@ -651,7 +651,7 @@ def compute_persistent_cup_length(k: int, \
             d_min = min(barcode_1[1], barcode_2[1])
 
             i_primes_ = [i for i in range(len(b_time)) if b_time[i] <= d_min]
-            if len(i_primes_) == 0:
+            if len(i_primes_) == 0: #unnecessary?
                 break
                 
             i_ = max(i_primes_)
