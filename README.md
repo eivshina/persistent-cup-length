@@ -125,7 +125,15 @@ See docstring inside `cup_length_utils.py` for full documentation.
 
 If you use this code in your research, please cite the associated paper:
 
-> _Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length_, E Ivshina, G Anikeeva, L Zhou, 2025.
+> @misc{ivshina2025doughnutmickeymousedetecting,
+      title={Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length}, 
+      author={Ekaterina S. Ivshina and Galit Anikeeva and Ling Zhou},
+      year={2025},
+      eprint={2507.11151},
+      archivePrefix={arXiv},
+      primaryClass={math.AT},
+      url={https://arxiv.org/abs/2507.11151}, 
+}
 
 ---
 
@@ -142,4 +150,4 @@ If you use this code in your research, please cite the associated paper:
 
 Feel free to open an issue or contact ekaterina.s.ivshina@gmail.com for questions or suggestions.
 
-## TODO: add zenodo doi citation for repo
+ 
