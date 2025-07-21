@@ -22,7 +22,7 @@ If you use this code in your research, please cite the associated paper:
 
 ## 📖 Overview
 
-The **persistent cup-length** algorithm, introduced by [Contessoto et al. (2022)](https://doi.org/10.4230/lipics.socg.2022.31), identifies higher-order topological interactions in data using persistent cohomology and the cup product operation over Z mod 2. This helps detect nontrivial toroidal structures, going beyond standard barcode analysis.
+The **persistent cup-length** algorithm, introduced by [Contessoto, Mémoli, Stefanou and Zhou (2022)](https://doi.org/10.4230/lipics.socg.2022.31), identifies higher-order topological interactions in data using persistent cohomology and the cup product operation over Z mod 2. This helps detect nontrivial toroidal structures, going beyond standard barcode analysis.
 
 This code is built for use with **Ripser** and works with both full and landmark-subsampled Vietoris–Rips filtrations. A version of the algorithm designed to work with simplexwise filtrations in [Dionysus](https://www.mrzv.org/software/dionysus/) will be released soon.
 
