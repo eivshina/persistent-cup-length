@@ -43,7 +43,7 @@ The distance matrix used to create the bottom panel (wedge sum) in Figure 1 of t
 ---
 
 ## 🚀 Getting Started in Google Colab
-
+Note that the code assumes python 3.8
 ### 1. Install dependencies
 
 ```bash
